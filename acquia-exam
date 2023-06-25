@@ -1,10 +1,37 @@
-- where we save the env vairable, .htaccess, php script, ,mysql queries. 
-- sync directory, could overwirite the drupal variable like $base_url
-- .gitignore, when i send code to it.
-- if drupal application has many of error, what we can do ? reset the  code, remove files and db
-- for front-end content cache and it based on the location and country what we can use ? enable goip and diable varnish or disable varnish and 
-enable CDN, or go to acquia purge. or use goip features. 
-- acquia does not support lets encrypt
-- upload code by ftp 
-- when you need to check the code before commiited, you can enable job by : pipline, cloudhook, team will check
-- drush will be pre-installed out the codebase, or come with the codebase
+The following concepts are part of sciario and drupal architecture, i'd consult devops side and drupal develope side in this matter. 
+
+- for front-end content, and its affects of the country and locations, what is best practice solution for caching
+1. enable GeIP cache feature, 
+2. disable varnish and enable CDN for all variants
+3. enable varnish and disable GEOIP 
+4. enable Acquia purge. 
+
+
+- where we save the env vairables in codebase ( it should choose over one answer ) 
+1. .htaccess,
+2. php script, 
+3. ,mysql queries. 
+
+
+- sync directory during configuration management, what this sync will do 
+1. could overwrite the drupal variable like $base_ur. 
+2. other answers.
+
+- API with Varnish :
+1. clear cache
+2. make changes on Varnish ( custom config VCL )
+3. API did not control Varnish (I have chosen this ) 
+
+-when I move part of repo/ configs/code to .gitigore. 
+
+- if Drupal application has many of error, what we can do ? reset the  code, remove files and db. ( toll back ) 
+
+- acquia does not support let's encrypt  ( i choose this while asking about SSL ) 
+- upload code by ftp .
+- installing drupal ( tar, zip ) method
+- when you need to check the code before committed, you can enable job by : pipline, cloudhook, team will check
+- drush will be pre-installed out of the codebase, it locates in vendor, or include with the codebase in docroot
+-any change between Drupal code bases in cloud and in local environment ?
+- piplines acquia did not running outside 
+if pipline went to access module from other private repo 
+ 
