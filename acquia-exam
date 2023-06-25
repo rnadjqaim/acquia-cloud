@@ -1,0 +1,10 @@
+- where we save the env vairable, .htaccess, php script, ,mysql queries. 
+- sync directory, could overwirite the drupal variable like $base_url
+- .gitignore, when i send code to it.
+- if drupal application has many of error, what we can do ? reset the  code, remove files and db
+- for front-end content cache and it based on the location and country what we can use ? enable goip and diable varnish or disable varnish and 
+enable CDN, or go to acquia purge. or use goip features. 
+- acquia does not support lets encrypt
+- upload code by ftp 
+- when you need to check the code before commiited, you can enable job by : pipline, cloudhook, team will check
+- drush will be pre-installed out the codebase, or come with the codebase
