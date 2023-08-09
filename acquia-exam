@@ -34,4 +34,10 @@ The following concepts are part of sciario and drupal architecture, i'd consult 
 -any change between Drupal code bases in cloud and in local environment ?
 - piplines acquia did not running outside 
 if pipline went to access module from other private repo 
- 
+
+
+
+
+Acquia's pipelines do not run externally.
+
+If a pipeline needs to access a module from another private repository...
