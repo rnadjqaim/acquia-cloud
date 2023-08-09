@@ -1,0 +1,57 @@
+Acquia Exam Questions 
+
+- purpose of using httponly
+- if your stg enviroemnt an old version of files and you need to updaye them by syncing  files from production to st, what will be happen for the old files in stg ( overwrite, updates them, removes the files that
+exidt in stg put not exist in production ,... )
+- performance questions : 
+- case sinarion that database is full of the logs, what you can do to enhcance the performance of the site :
+enable syslog modules
+- the limitation of git (DVCS):
+storing image assets 
+- where the envarionemnt variable in acquia soore (many answers):
+ php script and .htaccess
+- case scianrio that new employee joins acquia subscription, what you can do to avoid any mistake (multi answer):
+assign to developer rules, create custom rules for junior to avoid any worki on profuction, limited access by IP
+- case sciario that if your pipline integrates with bitbuckets and there are failed authentiaction, the close causes for that :
+you're not the owner of the repo, key/webhook did not add to bitbucket
+- if your pipline need to access anther provate repo then you need to define it in yaml files with : enctypted ssh key 
+- if your websites changes based on the location, and you enable geoip, what you can do to cache the variant content :
+supply custom vcl with vary : http header 
+- to limit the access per ip addrese, acquia offer : IP whitelisting addressing
+- if you have many developer and QA and they need to test features then pull the request to the branch, what suggested solution (multiple answer ):
+create CD that integratd with pipline to update after any pull request, create CD with cloudhooks to automated pull request and updating
+- if you have an issuws and you need to read the logs, based on which value you detect : http hrader request
+- one of the following logs could not download and exist in acquia interface : vasnish logs
+- test scinario to use external logs aggreagation such as suplunvk,what action you need to do to  enablr it ( multi answer) 
+ install suplunk deamon on evn, install it on webservers to distrubte it with LB
+- SSL Legacy certificate, A recod or CNAME recod ( test cases ) 
+- Anit virius moduel : clamv 
+- pest practive to celar cache : usinf acquia purge 
+- test sciario with which config you can modify ig there are timout php request : increase php memory
+- test sciario if you will use lets sncrypt  with acquia site
+-direct question of production mode
+- direct question of methods of delplyement codes,
+- handling diffferenct config with differcnt enviroements: config split
+- which of the following is not vaild stateement realted to the perssions and team : there are only one admin for each team 
+- drush command to sync db in case you need to sync by db 
+- blt command to deply 
+- if the drush buit in or you will install it 
+- question about persnolized contenet if varnish cache it
+ - test sciario that vasnish did not cache pdf files with 20MB, so what id the reason : the varnish caches lower that 10MB
+- test ssiario if API contorl varnish and remove cache
+- test scinario asking which you prefer professesional or entrprose plan and why
+- what is chrome driver port
+- uses of RA (remote adminstation ).
+- Encryption protocal and version is used in acquia
+-if the api call somethng is dupercated, what the error message wil be ?
+- best practive for image optimzation
+- automated testing behat and unit test
+- if something is stcuk, what will do : rolling back code and db
+- if you're edit the contenct on stg and you need to go to the production, you can sync : files and db
+-difference between sync directory and vcs (git)
+- why you deploy tag in acquia not branches
+- if your dev en in acquia using cloud hook and when you pull the repo locally there are failed inhook script, what is reason, 
+- direct question of the professional data alyer is pods or singles server, 
+- monitoring tool in acquia  : newrelic 
+- if you're not ower of the subscription, what di you saw when you're open the  subscritption 
+- 
